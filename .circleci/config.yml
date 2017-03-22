@@ -1,1 +1,8 @@
 version: 2
+  build:
+    working_directory: ./
+    docker:
+      - image: php:latest
+    steps:
+      - checkout
+      - run: echo "hello world"
