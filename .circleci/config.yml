@@ -6,4 +6,6 @@ jobs:
       - image: alexwijn/docker-git-php-composer
     steps:
       - checkout
-      - run: echo "hello world"
+      - run:
+          name: Run tests
+          command: phpunit
