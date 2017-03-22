@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ./
     docker:
-      - image: php:latest
+      - image: alexwijn/docker-git-php-composer
     steps:
       - checkout
       - run: echo "hello world"
