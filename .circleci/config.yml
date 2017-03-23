@@ -1,14 +1,3 @@
-version: 2
-jobs:
-  build:
-    working_directory: ~/circulate
-    docker:
-      - image: alexwijn/docker-git-php-composer
-    steps:
-      - checkout
-      - run:
-          name: Show directory
-          command: ls
-      - run:
-          name: Run tests
-          command: ./vendor/bin/phpunit
+machine:
+  php:
+    version: 5.4.5
