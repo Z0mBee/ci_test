@@ -11,3 +11,8 @@ script:
   - sudo mv phpunit.phar /usr/local/bin/phpunit 
   - phpunit --version 
   - phpunit
+
+deploy:
+  provider: heroku
+  api_key: b9e8470d-ef82-499b-9990-5cf25ecd7d9a
+  app: agile-harbor-46000
